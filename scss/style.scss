@@ -1,0 +1,1372 @@
+@import 'vars';
+@import 'fonts';
+
+html {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'SFUIDisplay-Regular', 'Arial', 'sans-serif';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.flex-js-c {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 40px;
+        max-width: 1440px;
+    }
+}
+
+.header {
+    box-shadow: 0px 9px 16px 2px rgba(34, 60, 80, 0.12);
+    z-index: 100;
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__inner {
+        min-height: 80px;
+        display: flex;
+        @media (min-width: 648px) {
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media (min-width: 1024px) {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 640px) {
+        .header {
+            &__inner {
+                min-height: 100px;
+                max-height: 200px;
+                @media (min-width: 1024px) {
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                }
+
+                .logo {
+                    max-height: 200px;
+                    @media (min-width: 1024px) {
+                        text-align: center;
+                    }
+
+                    &__link {
+                        &-img {
+                            @media (min-width: 640px) {
+                                max-width: 100%;
+                            }
+                            @media (min-width: 768px) {
+                                max-width: 100%;
+                            }
+                            @media (min-width: 1024px) {
+                                max-width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#fff;
+    z-index: 1000000;
+  }
+  .sticky + .head {
+    margin-top: 115px;
+  }
+.menu__box-desktop{
+    @media (min-width: 640px) {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+}
+.menu__item-desktop{
+    padding: 0 15px 0 15px;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    color:#000;
+    &:hover{
+        color:$accent;
+        transition: all 0.5s;
+    }
+
+}
+.burger-menu{
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+.burger-menu_button {
+    position: fixed;
+    @media (min-width: 640px) {
+       top: 20px;
+       right: 20px;
+    }
+
+    @media (min-width: 768px) {
+        top: 20px;
+        right: 30px;
+    }
+
+    @media (min-width: 1024px) {
+        top: 10px;
+        right: 10px;
+    }
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .burger-menu_button:hover .burger-menu_lines {
+    filter: brightness(0.7);
+  }
+  
+  .burger-menu_button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .burger-menu_lines::before,
+  .burger-menu_lines::after,
+  .burger-menu_lines {
+    position: absolute;
+    background-color: $accent;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    @media (min-width: 640px) {
+        width: 70px;
+        height: 7px;
+    }
+
+    @media (min-width: 768px) {
+        width: 70px;
+        height: 7px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 50px;
+        height: 3px;
+    }
+  }
+  .burger-menu_lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .burger-menu_lines::before {
+    content: '';
+    @media (min-width: 640px) {
+        top: -16px;
+    }
+
+    @media (min-width: 768px) {
+        top: -16px;
+    }
+
+    @media (min-width: 1024px) {
+        top: -12px;
+    }
+  }
+  .burger-menu_lines::after {
+    content: '';
+    @media (min-width: 640px) {
+        top: 16px;
+    }
+
+    @media (min-width: 768px) {
+        top: 16px;
+    }
+
+    @media (min-width: 1024px) {
+        top: 12px;
+    }
+  }
+  
+  
+  .burger-menu_active .burger-menu_lines {
+    background-color: transparent;
+  }
+  .burger-menu_active .burger-menu_lines::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .burger-menu_active .burger-menu_lines::after{
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .burger-menu_nav {
+    padding-top: 120px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #fff;
+    overflow-y: auto;
+    right: -100%;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+  .burger-menu_active .burger-menu_nav {
+    right: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .burger-menu_link {
+    padding: 18px 35px;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
+    font-size: 45px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 1px solid #fff;
+  }
+  .burger-menu_link:first-child {
+    border-top: 1px solid #fff;
+  }
+  .burger-menu_link:hover {
+    filter: brightness(0.9);
+  }
+  .burger-menu_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+  }
+  .burger-menu_active .burger-menu_overlay {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+
+.head {
+    background-image: url(../images/background.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 193px;
+}
+
+.top-information {
+    background: rgba(33, 33, 33, 0.1);
+
+    .top-information-items {
+        @media (min-width: 640px) {
+            padding: 20px 100px;
+        }
+
+        &__title {
+            font-family: 'SFUIDisplay-Bold';
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 auto;
+            color: #fff;
+            @media (min-width: 640px) {
+                max-width: 400px;
+            }
+            @media (min-width: 768px) {
+                max-width: 510px;
+            }
+            @media (min-width: 1024px) {
+                max-width: 400px;
+            }
+
+            h3 {
+                text-align: center;
+                letter-spacing: 1px;
+
+                @media (min-width: 640px) {
+                    font-size: 60px !important;
+                }
+                @media (min-width: 768px) {
+                    font-size: 60px !important;
+                }
+                @media (min-width: 1024px) {
+                    font-size: 40px !important;
+                }
+            }
+        }
+
+        &__points {
+            font-family: 'SFUIDisplay-Regular';
+
+            @media (min-width: 640px) {
+                font-weight: 500;
+                line-height: 1.4;
+                font-size: 40px;
+                letter-spacing: 1.1px;
+            }
+            @media (min-width: 768px) {
+                font-weight: 500;
+                line-height: 1.4;
+                font-size: 40px;
+                letter-spacing: 1.1px;
+            }
+            @media (min-width: 1024px) {
+                font-weight: 500;
+                line-height: 1.4;
+                font-size: 20px;
+                letter-spacing: 1.1px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 100%;
+            }
+            @media (min-width: 1330px) {
+                
+                max-width: 70%;
+            }
+
+            margin: 0 auto;
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                display: flex;
+                align-items: center;
+                @media (min-width: 640px) {
+                   padding-top: 20px;
+                }
+                @media (min-width: 768px) {
+                    padding-top: 40px;
+                }
+                @media (min-width: 1024px) {
+                    padding-bottom: 40px;
+                }
+                span {
+                    @media (min-width: 640px) {
+                        margin-right: 10px;
+                        padding: 6px 22px;
+                        border-radius: 50px;
+                        border: 2px solid #fff;
+                        -moz-border-radius: 50px;
+                        -webkit-border-radius: 50px;
+                        -khtml-border-radius: 50px;
+                    }
+                    @media (min-width: 768px) {
+                        margin-right: 10px;
+                        padding: 6px 22px;
+                        border-radius: 50px;
+                        border: 2px solid #fff;
+                        -moz-border-radius: 50px;
+                        -webkit-border-radius: 50px;
+                        -khtml-border-radius: 50px;
+                    }
+                    @media (min-width: 1024px) {
+                        margin-right: 10px;
+                        padding: 6px 14px;
+                        border-radius: 50px;
+                        border: 2px solid #fff;
+                        -moz-border-radius: 50px;
+                        -webkit-border-radius: 50px;
+                        -khtml-border-radius: 50px;
+                    }
+
+                    text-align:center;
+                    background:transparent;
+                }
+            }.first{
+                @media (min-width: 640px) {
+                    margin-right: 10px;
+                    padding: 6px 24px;
+                    border-radius: 50px;
+                    border: 2px solid #fff;
+                    -moz-border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -khtml-border-radius: 50px;
+                }
+                @media (min-width: 768px) {
+                    margin-right: 10px;
+                    padding: 6px 24px;
+                    border-radius: 50px;
+                    border: 2px solid #fff;
+                    -moz-border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -khtml-border-radius: 50px;
+                }
+                @media (min-width: 1024px) {
+                    margin-right: 10px;
+                    padding: 6px 16px;
+                    border-radius: 50px;
+                    border: 2px solid #fff;
+                    -moz-border-radius: 50px;
+                    -webkit-border-radius: 50px;
+                    -khtml-border-radius: 50px;
+                }
+            }
+
+        }
+    }
+}
+.first-destop, .seconde-desktop {
+    p{
+        @media (min-width: 640px) {
+            margin: 0;
+        }
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+        @media (min-width: 1024px) {
+            margin: 50px 0 50px 0;
+            &:nth-child(1){
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+        }
+    }
+}
+.first-destop{
+    &:nth-child(2){
+        margin: 0;
+    }
+}
+.content {
+    display: flex;
+
+    @media (min-width: 640px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+.content-desktop{
+    display: flex;
+
+    @media (min-width: 640px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: 1024px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media (min-width: 1440px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.packages-title,
+.list-of-services-title,
+.contact-box__title,
+.about-us-box__title,
+.terms-of-use__title {
+    font-family: 'SFUIDisplay-Regular';
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    @media (min-width: 640px) {
+        font-size: 60px;
+        margin: 20px 0;
+
+        hr {
+            height: 2px;
+            color: $accent;
+            background-color: $accent;
+            border: none;
+        }
+    }
+    @media (min-width: 768px) {
+        font-size: 50px;
+        margin: 20px 0;
+
+        hr {
+            height: 1px;
+            color: $accent;
+            background-color: $accent;
+            border: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 28px;
+        margin: 20px 0;
+
+        hr {
+            height: 1px;
+            color: $accent;
+            background-color: $accent;
+            border: none;
+        }
+    }
+    @media (min-width: 1320px) {
+        font-size: 28px;
+        margin: 20px 0;
+
+        hr {
+            height: 1px;
+            color: $accent;
+            background-color: $accent;
+            border: none;
+        }
+    }
+
+}
+
+.product-packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.product-packages-items{
+    display: flex;
+    
+}
+    @media (min-width: 640px) {
+        padding: 2% 0;
+    }
+
+    .product-card {
+        border: 1px solid rgb(172, 172, 172);
+        border-radius: 8px;
+
+        .product-card-title {
+            font-family: 'SFUIDisplay-Bold';
+            font-weight: 700;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            @media (min-width: 640px) {
+                width: 100%;
+                font-size: 50px;
+                padding: 50px 0;
+            }
+            @media (min-width: 768px) {
+                width: 100%;
+                font-size: 40px;
+                padding: 30px 0;
+            }
+            @media (min-width: 1024px) {
+                width: 98%;
+                font-size: 20px;
+                padding: 10px 0 10px 0; 
+            }
+            @media (min-width: 1320px) {
+                width: 98%;
+                font-size: 20px;
+                padding: 15px 0 10px 0; 
+            }
+            font-weight: normal;
+            text-align: center;
+
+            span {
+                display: block;
+                margin: 0 .4em;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    @media (min-width: 640px) {
+                        border-top: 4px solid $accent;
+                        margin-top: .7em;
+                    }
+                    @media (min-width: 768px) {
+                        border-top: 4px solid $accent;
+                        margin-top: .7em;
+                    }
+                    @media (min-width: 1024px) {
+                        border-top: 2px solid $accent;
+                        margin-top: .7em;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    @media (min-width: 640px) {
+                        border-top: 4px solid $accent;
+                        margin-top: .7em;
+                    }
+                    @media (min-width: 768px) {
+                        border-top: 4px solid $accent;
+                        margin-top: .7em;
+                    }
+                    @media (min-width: 1024px) {
+                        border-top: 2px solid $accent;
+                        margin-top: .7em;
+                    }
+                }
+
+                &::before {
+                    margin-left: -102%;
+                }
+
+                &::after {
+                    margin-left: 2%;
+                }
+            }
+
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .product-card-title{
+            min-width: 200px;
+        }
+        .product-card-list {
+            text-align: left;
+            @media (min-width: 640px) {
+                padding: 0px 40px 40px 20px;
+            }
+            @media (min-width: 768px) {
+                padding: 0px 40px 40px 20px;
+            }
+            @media (min-width: 1024px) {
+                padding: 0px 10px 5px 10px;
+            }
+            @media (min-width: 1320px) {
+                padding: 0px 20px 20px 10px;
+            }
+
+            &__items {
+                color: $seconde-color-text;
+                @media (min-width: 640px) {
+                    font-size: 40px;
+                    padding: 8px 20px 8px 20px;
+                }
+                @media (min-width: 768px) {
+                    font-size: 40px;
+                    padding: 8px 20px 8px 20px;
+                }
+                @media (min-width: 1024px) {
+                    font-size: 12px;
+                    padding: 4px 10px 4px 10px;
+                }
+                @media (min-width: 1320px) {
+                    font-size: 15px;
+                    padding: 8px 20px 8px 20px;
+                }
+            }
+        }
+
+        @media (min-width: 640px) {
+            max-width: 100%;
+        }
+
+        &:hover {
+            border: 1px solid $accent;
+        }
+
+        .product-card-price {
+            font-family: 'SFUIDisplay-Regular';
+            font-weight: 500;
+            @media (min-width: 640px) {
+                padding: 15px 0 15px 0;
+                margin: 10px 0 10px 0;
+                width: 100%;
+                font-size: 45px;
+            }
+            @media (min-width: 768px) {
+                padding: 15px 0 15px 0;
+                margin: 10px 0 10px 0;
+                width: 100%;
+                font-size: 45px;
+            }
+            @media (min-width: 1024px) {
+                padding: 8px 0 8px 0;
+                margin: 8px 0 8px 0;
+                width: 100%;
+                font-size: 18px;
+            }
+            @media (min-width: 1320px) {
+                padding: 10px 0 10px 0;
+                margin: 10px 0 10px 0;
+                width: 100%;
+                font-size: 20px;
+            }
+            background: $accent;
+            color: #fff;
+            text-align: center;
+        }
+
+        .product-card-btn {
+            appearance: none;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            @media (min-width: 640px) {
+                padding: 8px 16px;
+                margin: 40px 0 40px 0;
+                font-size: 40px;
+            }
+            @media (min-width: 768px) {
+                padding: 16px 16px;
+                margin: 40px 0 40px 0;
+                font-size: 40px;
+            }
+            @media (min-width: 1024px) {
+                padding: 8px 8px 8px  8px;
+                margin: 8px 0 18px 0;
+                font-size: 16px;
+            }
+            @media (min-width: 1320px) {
+                padding: 10px 10px 10px  10px;
+                margin: 10px 0 20px 0;
+                font-size: 18px;
+            }
+            border: 1px solid #fff;
+
+            &:hover {
+                color: $accent;
+                border: 1px solid $accent;
+                transition: all 0.5s;
+            }
+        }
+
+    }
+}
+.content-desktop-product-package{
+    @media (min-width: 640px) {
+        
+    }
+    @media (min-width: 768px) {
+       
+    }
+    @media (min-width: 1024px) {
+        justify-content: space-around;
+    }
+}
+.list-of-services__accordion {
+    font-family: 'SFUIDisplay-Regular';
+    font-weight: 500;
+    background-color: #fff;
+    color: #333333;
+    cursor: pointer;
+    @media (min-width: 640px) {
+        padding: 18px;
+    }
+    @media (min-width: 768px) {
+        padding: 18px;
+    }
+    @media (min-width: 1024px) {
+        padding: 10px;
+    }
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:after {
+        content: '\142F';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+    @media (min-width: 640px) {
+        font-size: 50px;
+    }
+    @media (min-width: 768px) {
+        font-size: 40px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 20px;
+    }
+}
+.list-of-services{
+    &:last-child{
+        border-bottom: none;
+    }
+    @media (min-width: 640px) {
+        border-bottom: 1px solid $accent;
+        border-radius: 8px;
+    }
+    @media (min-width: 768px) {
+        border-bottom: 1px solid $accent;
+        border-radius: 8px;
+    }
+    @media (min-width: 1024px) {
+        border-bottom: 1px solid $accent;
+        border-radius: 8px;
+    } 
+}
+
+
+.active {
+    background-color: #fff;
+    color: $accent;
+
+    &::after {
+        content: "\1431";
+        color: $accent;
+    }
+}
+
+.panel {
+    width: 100%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.panel-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+    &:hover{
+        background-color:#F2F2F2;
+        z-index: 500;
+    }
+
+    &__name {
+        width: 79%;
+        text-align: left;
+        color: $seconde-color-text;
+        padding-left: 10px;
+
+        @media (min-width: 640px) {
+            font-size: 40px;
+        }
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+
+    &__line {
+        width: 1%;
+        color: $seconde-color-text;
+        background-color: $seconde-color-text;
+    }
+
+    &__price {
+        width: 20%;
+        text-align: right;
+        color: $seconde-color-text;
+        padding-right: 20px;
+
+        @media (min-width: 640px) {
+            font-size: 40px;
+        }
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.list-of-services-border {
+    @media (min-width: 640px) {
+        border: 1px solid $accent;
+    }
+    @media (min-width: 768px) {
+        border: 1px solid $accent;
+    }
+    @media (min-width: 1024px) {
+        border: 1px solid $accent;
+    }
+    border-radius: 8px;
+}
+
+.scrollup {
+    z-index: 1000;
+    @media (min-width: 640px) {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        right: 60px;
+    }
+    @media (min-width: 768px) {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        right: 60px;
+    }
+    @media (min-width: 1024px) {
+        width: 100px;
+        height: 100px;
+        bottom: 50px;
+        right: 0px;
+    }
+    opacity: 0.7;
+    position: fixed;
+    display: none;
+    text-indent: -9999px;
+    background: url('..//images/icons8-scroll-up-100.png') no-repeat;
+    @media (min-width: 1024px) {
+        background-size: 50px 50px;
+    }
+}
+.footer{
+    border: 1px solid #E5E5E5;
+    background-color: #F2F2F2;
+    @media (min-width: 640px){
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+    @media (min-width: 768px){
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+    @media (min-width: 1024px){
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+}
+.footer-box-items{
+    @media (min-width: 640px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    @media (min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+}
+.footer-box-items-row{
+    display: flex;
+    @media (min-width: 640px){     
+        flex-direction: column;
+    }
+    @media (min-width: 768px){     
+        flex-direction: column;
+    }
+    @media (min-width: 1024px){     
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    p{
+        font-family: 'SFUIDisplay-Regular';
+        font-weight: 500; 
+        @media (min-width: 640px){     
+            font-size: 40px;
+            color:#808080;
+            text-align: left;
+        }
+        @media (min-width: 768px){     
+            font-size: 35px;
+            color:#808080;
+            text-align: left;
+        }
+        @media (min-width: 1024px){     
+            font-size: 20px;
+            color:#808080;
+            text-align: left;
+            margin: 0;
+        }
+        @media (min-width: 1320px){     
+            font-size: 18px;
+            color:#808080;
+            text-align: left;
+            margin: 0;
+        }
+    }
+}
+.footer-box-items-row-col{
+    @media (min-width: 640px){     
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: 768px){     
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: 1024px){     
+        display: flex;
+        flex-direction: row;
+    }
+    &__link{
+       font-family: 'SFUIDisplay-Regular';
+       font-weight: 500;
+       cursor: pointer;
+    @media (min-width: 640px){     
+        font-size: 40px;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    @media (min-width: 768px){     
+        font-size: 30px;
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    @media (min-width: 1024px){     
+        font-size: 18px;
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+    @media (min-width: 1320px){     
+        font-size: 16px;
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+    a{
+        color:#A0A0A0;
+        text-decoration: none;
+        &:hover{
+            color:$accent;
+        }
+    }
+}
+}
+.copyright{
+    display: flex;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+    @media (min-width: 640px){     
+        flex-direction: row; 
+        width: 320px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+    @media (min-width: 768px){     
+        flex-direction: row; 
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+    @media (min-width: 1024px){     
+        flex-direction: row; 
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0px;
+    }
+    @media (min-width: 1320px){     
+        flex-direction: row; 
+        width: 160px;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 00px;
+    }
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    font-family: 'SFUIDisplay-Regular';
+    font-weight: 500;
+    background-color: #fefefe;
+    border-radius: 8px;
+    border: 2px solid $accent;
+    @media (min-width: 640px){     
+        margin: 30% auto; /* 15% from the top and centered */
+        position: relative;
+    }
+    @media (min-width: 768px){     
+        margin: 30% auto; /* 15% from the top and centered */
+        position: relative;
+    }
+    @media (min-width: 1024px){     
+        margin: 15% auto; /* 15% from the top and centered */
+    }
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    p a{
+        text-decoration: none;
+        color:$accent;
+    }
+    z-index: 200;
+    p{
+        @media (min-width: 640px){     
+            font-size: 50px;
+            text-align: center;
+        }
+        @media (min-width: 768px){     
+            font-size: 50px; 
+            text-align: center;
+        }
+        @media (min-width: 1024px){     
+            font-size: 28px;
+            text-align: left;
+        }
+    }
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+    font-family: 'SFUIDisplay-Regular';
+    font-weight: 500;
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    z-index: 200;
+    @media (min-width: 640px){     
+        font-size: 50px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    @media (min-width: 768px){     
+        font-size: 50px; 
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+    @media (min-width: 1024px){     
+        font-size: 28px;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+    }
+}
+
+.close {
+    &:hover{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &:focus{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
+.modal-content-br{
+    @media (min-width: 640px){     
+        display: inline-block;
+    }
+    @media (min-width: 768px){     
+        display: inline-block;
+    }
+    @media (min-width: 1024px){     
+        display: none;
+    }
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-box__items{
+    display: flex;
+    flex-direction: column;
+    h3{
+        @media (min-width: 640px){   
+            font-family: 'SFUIDisplay-Regular';
+            font-weight: 500;  
+           font-size: 40px;
+        }
+        @media (min-width: 768px){   
+            font-family: 'SFUIDisplay-Regular';
+            font-weight: 500;  
+           font-size: 40px;
+        }
+        @media (min-width: 1024px){   
+            font-family: 'SFUIDisplay-Regular';
+            font-weight: 500;  
+           font-size: 24px;
+        }
+        @media (min-width: 1320px){   
+            font-family: 'SFUIDisplay-Regular';
+            font-weight: 500;  
+           font-size: 24px;
+        }
+        a{
+            text-decoration: none;
+            color:$accent;
+        }
+    }
+}
+.map-box{
+    @media (min-width: 640px){   
+        width: 100%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+    @media (min-width: 768px){   
+        width: 100%;
+        height: 700px;
+        margin-bottom: 40px;
+    }
+    @media (min-width: 1024px){   
+        width: 100%;
+        height: 700px;
+        margin-bottom: 40px;
+    }
+}
+.terms-of-use{
+    &__text{
+        color: $seconde-color-text;
+        font-family: 'SFUIDisplay-Regular';
+        font-weight: 500; 
+        @media (min-width: 640px){   
+            font-size: 40px;
+        }
+        @media (min-width: 768px){   
+            font-size: 40px;
+        }
+        @media (min-width: 1024px){   
+            font-size: 18px;
+        }
+    }
+}

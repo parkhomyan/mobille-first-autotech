@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpotr" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./libs/slick/slick.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header" id="myHeader">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__link-img" src="images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <nav class="menu">
+          <div class="burger-menu">
+            <a href="" class="burger-menu_button">
+              <spun class="burger-menu_lines"></spun>
+            </a>
+            <nav class="burger-menu_nav">
+              <a href="#section-0" class="burger-menu_link">Главная</a>
+              <a href="#section-1" class="burger-menu_link">Пакеты</a>
+              <a href="#section-2" class="burger-menu_link">Услуги</a>
+              <a href="#section-3" class="burger-menu_link">Контакты</a>
+              <a href="#section-4" class="burger-menu_link">О Нас</a>
+              <!--<a href="#section-5" class="burger-menu_link">Секция 5</a>-->
+            </nav>
+            <div class="burger-menu_overlay"></div>
+          </div>
+          <ul class="menu__box-desktop">
+            <li><a class="menu__item-desktop" href="#section-0">Главная</a></li>
+            <li><a class="menu__item-desktop" href="#section-2">Услуги</a></li>
+            <li><a class="menu__item-desktop" href="#section-1">Пакеты</a></li>
+            <li><a class="menu__item-desktop" href="#section-4">Контакты</a></li>
+            <li><a class="menu__item-desktop" href="#section-3">О нас</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="head" id="section-0">
+    <div class="top-information">
+      <div class="top-information-items">
+        <div class="top-information-items__title">
+          <h3>
+            Установим ГБО - газ на авто
+          </h3>
+        </div>
+        <div class="top-information-items__points">
+          <div class="first-destop">
+            <p><span class="first">1</span>Ставим ГБО с Документами</p>
+            <p><span>2</span>Осмотр Вашего ГБО с последующей выдачей документов</p>
+          </div>
+
+          <div class="seconde-desktop">
+            <p><span>3</span>Официальный представитель LOVATO в Украине: Киев, Ровно</p>
+            <p><span>4</span>Лучшая цена на газовое оборудование на авто - Lovato</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container" id="section-1">
+    <div class="packages-title" id="packages">
+      <h3>Пакеты</h3>
+      <hr>
+    </div>
+    <div class="content content-desktop-product-package">
+      <div class="product-packages">
+        <div class="product-packages-items flex">
+          <div class="product-card">
+            <h3 class="product-card-title">
+              <span>ГБО Эконом</span>
+              <span>KME</span>
+            </h3>
+            <ul class="product-card-list">
+              <li class="product-card-list__items">Газ на 4 цилиндра</li>
+              <li class="product-card-list__items">Форсуерки Rail-001</li>
+              <li class="product-card-list__items">Рудуктор AT-09</li>
+              <li class="product-card-list__items">Балон 42 л. Polmocon</li>
+              <li class="product-card-list__items">Мультиклапан AT-02</li>
+              <li class="product-card-list__items">Комплект монтажный до 130 л/с</li>
+            </ul>
+            <p class="product-card-price">12 500 грн</p>
+            <button class="product-card-btn" id="myBtn">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-packages">
+        <div class="product-packages-items flex">
+          <div class="product-card">
+            <h3 class="product-card-title">
+              <span>ГБО эконом</span>
+              <span>Lovato</span>
+            </h3>
+            <ul class="product-card-list">
+              <li class="product-card-list__items">Газ на 4 цилиндра</li>
+              <li class="product-card-list__items">Форсунки Lovato XP</li>
+              <li class="product-card-list__items">Редуктор RGJ-32L</li>
+              <li class="product-card-list__items">Балон 42 л. Polmocon</li>
+              <li class="product-card-list__items">Мультиклапан Tomasetto AT-02</li>
+              <li class="product-card-list__items">Комплект монтажный до 140 л/с</li>
+            </ul>
+            <p class="product-card-price">12 500 грн</p>
+            <button class="product-card-btn" id="myBtn3">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-packages">
+        <div class="product-packages-items flex">
+          <div class="product-card">
+            <h3 class="product-card-title">
+              <span>ГБО стандарт</span>
+              <span>Lovato</span>
+            </h3>
+            <ul class="product-card-list">
+              <li class="product-card-list__items">Газ на 4 цилиндра</li>
+              <li class="product-card-list__items">Форсунки Lovato KP*EP*XP</li>
+              <li class="product-card-list__items">Редуктор RGJ-32L*RGS*UHP</li>
+              <li class="product-card-list__items">Балон 42 л. Polmocon</li>
+              <li class="product-card-list__items">Мультиклапан Tomasetto</li>
+              <li class="product-card-list__items">Комплект монтажный до 220 л/с</li>
+            </ul>
+            <p class="product-card-price">12 500 грн</p>
+            <button class="product-card-btn" id="myBtn">Заказать</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-packages">
+        <div class="product-packages-items flex">
+          <div class="product-card">
+            <h3 class="product-card-title">
+              <span>ГБО премиум</span>
+              <span>Lovato</span>
+            </h3>
+            <ul class="product-card-list">
+              <li class="product-card-list__items">Газ на 4 цилиндра / 6 цилиндров </li>
+              <li class="product-card-list__items">Электроника Easy Fast 6 цил.</li>
+              <li class="product-card-list__items">Форсунки KP</li>
+              <li class="product-card-list__items">Редуктор RGS*UHP до 260kW</li>
+              <li class="product-card-list__items">Балон 65 л. Atiker</li>
+              <li class="product-card-list__items">Мультиклапан Tomasetto</li>
+            </ul>
+            <p class="product-card-price">12 500 грн</p>
+            <button class="product-card-btn" id="myBtn">Заказать</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container padding" id="section-2">
+    <div class="content content-desktop" id="services">
+      <div class="list-of-services-title">
+        <h3 class="list-of-services-title__text">Услуги</h3>
+        <hr>
+      </div>
+      <div class="list-of-services-box list-of-services-border">
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Техническое обслуживание ГБО (Atiker, Stag, Zenit и
+            т.д.):</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>ТО 6/8 цил (Замена фильтров c компьютерной диагностикой. Фильтр 1*2)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>450 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>ТО 4 цил (Замена фильтров с отстойником (Atiker, Ultra 360°) c компьютерной диагностикой)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>450 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Техническое обслуживание ГБО (LandiRenzo):</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>ТО 4 цил LandiRenzo (Замена фильтров c компьютерной диагностикой)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>450 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>ТО 4 цил LandiRenzo (Замена фильтров c отстойником (Atiker, Ultra 360°) и компьютерной диагностикой)
+                </p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>450 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Техническое обслуживание ГБО:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена фильтра жидкой фазы</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена фильтра паровой фазы</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена фильтра на фильтр с отстойником (Atiker, Ultra 360°)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 250 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Форсунки:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена форсунок 4 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена форсунок 6/8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж/демонтаж форсунок 4/8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена кронштейна крепления форсунок</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок Valtek-30 4 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок Valtek-30 6/8 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок OMVL,Valtek-34,Matrix 4 цил. (1 планка)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок OMVL,Valtek-34,Matrix 6/8 цил. (2планки)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена резинок форсунок Valtek-30 (при чистке) 1 шт.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 25 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л форсунки 1 цил (Stag, Valtek)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн + стоимость р/к</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок HANA 4 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок HANA 6 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка форсунок HANA 8 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка бензиновых форсунок с демонтажом без снятия коллектора 4 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка бензиновых форсунок с демонтажом без снятия коллектора 6 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка бензиновых форсунок с демонтажом без снятия коллектора 8 цил.</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1шт.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Редуктор:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка электромагнитного клапана газа (ЭКГ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редутору Tomasetto (2е поколение)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 350 грн + стоимость р/к</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редуктору Tomasetto Alaska</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 350 грн + стоимость р/к</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редуктору Tomasetto Artic/Antartic,Bigas,KME Silver/Gold</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн + стоимость р/л</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редуктору BRC Genius MB</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн + стоимость р/л</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редуктору Gurtner, Zavolli, Palladio, BRC Genius Max</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 600 грн + стоимость р/л</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена р/л к редуктору LandiRenzo</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн + стоимость р/л</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 300 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж/демонтаж редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Перенос редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 250 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена датчика температуры редуктора (с датчиком)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 300 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена катушки редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена штуцера тосола/газа на редукторе 1 шт. (демонтаж./монтаж. редуктора)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 250 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена сердечника клапана в редукторе</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена кронштейна крепления редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Баллон, мультиклапан, ВЗУ:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж/демонтаж баллона</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 600 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Перенос баллона</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 600 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена мультиклапана</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж/демонтаж мультиклапана</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена вентиля мультиклапана</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена датчика уровня газа с заменой электропроводки</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена датчика уровня газа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Регулировка датчика уровня газа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена/монтаж ВЗУ в бампере</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Перенос ВЗУ</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Ремонт/чистка ВЗУ</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 300 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Установка ВЗУ в лючок бензобака</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Электрика:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена электронного блока управления (ЭБУ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена электронного блока управления с проводкой (ЭБУ) 4-8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 2000 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Перенос электронного блока управления (ЭБУ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Ремонт электропроводки газового оборудования</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Ремонт электронного блока управления (ЭБУ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 600 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена МАР-сенсора (датчик давления и вакуума)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>МАР-сенсор (датчик давления и вакуума) PS-02</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>1200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена датчика температуры газа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж эмулятора уровня бензина</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж эмулятора давления бензина</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена предохранителя (с предохранителем)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена колодки предохранителя</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена переключателя вида топлива (кнопка)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена зуммера</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">II поколение:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Регулировка II поколения</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Слив конденсата</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Врезка штуцера в карбюратор без демонтажа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1 шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Демонтаж/монтаж карбюратора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена переключателя вида топлива (кнопка)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 250 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена переключателя вида топлива с проводкой</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена/монтаж/демонтаж смесителя</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена/монтаж/демонтаж антихлопкового клапана</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Установка эмулятора форсунок</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена эмулятора форсунок без замены проводки</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Установка эмулятора лямбда зонда</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена эмулятора лямбда зонда без замены проводки</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена дозатора газа и регулировка</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена резинки к антихлопку</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Замена трубок, шлангов, переходников, фитингов:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена/монтаж трубки (магистраль) баллон-редуктор (термопластик)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 800 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена/монтаж трубки баллон-ВЗУ (термопластик)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена переходника / тройника тосольного</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн / 1 шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена тосольного шланга (с шлангом)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 250 грн / метр</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена газового шланга (с шлангом)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн / метр</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена газового шланга на форсунках</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн / метр</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена вакуумного шланга (с шлангом)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн / метр</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена хомута (с хомутом)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 25 грн / 1 шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена фитинга термопластиковой трубки (D6, D8) с фитингом</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн / 1 шт.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-of-services">
+          <button class="list-of-services__accordion ">Другое:</button>
+          <div class="panel">
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Регулировка IV поколения</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Регулировка IV поколения в движении</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Диагностика неисправностей ГБО</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 200 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Дигностика утечки газа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Устранение утечки охлаждающей жидкости</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена электроклапана газа (ЭКГ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Перенос электроклапана газа (ЭКГ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 150 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена электроклапана бензина (ЭКБ)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Устранение подсоса воздуха</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Устранение утечки газа</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Переврезка обогрева редуктора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 400 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Врезка штуцера в коллектор 4-8 цил без демонтажа (за 1 шт.)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж/демонтаж впускного коллектора</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж ГБО II поколения</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 1500 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Демонтаж ГБО II поколения</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 750 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>УМонтаж ГБО IV поколения 4-8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 2800 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Демонтаж ГБО IV поколения 4-8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 1000 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж ГБО IV поколения 4-8 цил (подкапотная часть)</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 2000 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Монтаж системы защиты клапанов Flash Lube</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>УРегулировка системы защиты клапанов Flash Lube</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Проверка компресии 1 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Замена свечей зажигания 4-8 цил</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 50 грн / 1 шт.</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Развоздушивание системы охлаждения</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 100 грн</p>
+              </div>
+            </div>
+            <div class="panel-table">
+              <div class="panel-table__name">
+                <p>Чистка дроссельной заслонки с демонтажом</p>
+              </div>
+              <hr class="panel-table__line">
+              <div class="panel-table__price">
+                <p>от 500 грн</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container" id="section-4">
+    <div class="contact-box">
+      <div class="contact-box__title">
+        <h3>Контакты</h3>
+        <hr>
+      </div>
+      <div class="contact-box__items">
+        <h3>Мы на карте</h3>
+        <div id="map" class="map-box"></div>
+        <h3>Наш адрес: г. Киев, ул. Наумова 66</h3>
+        <h3>Tелефон: <a href="tel:+380636500434">+38(063)-65-00-434</a> </h3>
+      </div>
+    </div>
+  </section>
+  <section class="container padding" id="section-3">
+    <div class="about-us-box">
+      <div class="about-us-box__title">
+        <h3>О Нас</h3>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <div class="footer-box-items">
+          <div class="footer-box-items-row">
+            <!--<div class="footer-box-items-row-title">
+              
+            </div>-->
+            <div class="footer-box-items-row-col">
+              <p>Полезная информация</p>
+              <div class="footer-box-items-row-col__link"><a href="#section-0">Главаня</a></div>
+              <div class="footer-box-items-row-col__link"><a href="#section-4">Контакты</a></div>
+              <div class="footer-box-items-row-col__link"><a href="#">Сертификаты</a></div>
+              <div class="footer-box-items-row-col__link"><a href="terms_of_use.html">Правила пользования сайтом</a></div>
+            </div>
+            <div class="footer-box-items-row-col">
+              <div class="copyright"><p>TechAutoGas &#32;</p>
+                <!-- скрипт выводв даты в копирайт -->
+                <p> &#32;<script language="javascript" type="text/javascript">
+                  var d = new Date();
+                  document.write(d.getFullYear());
+                </script></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Для заказа и консультации позвоните по номеру: <br class="modal-content-br"><a
+            href="tel:+380636500434">+38(063)-65-00-434</a></p>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="/libs/slick/slick.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="/js/map.js"></script>
+  <a href="#" class="scrollup">Наверх</a>
+</body>
+
+</html>
+
+
