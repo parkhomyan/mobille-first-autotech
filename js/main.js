@@ -89,6 +89,8 @@ function burgerMenu(selector) {
 }
 
 burgerMenu('.burger-menu');
+
+
 // Get the modal
 
 var modal = document.getElementById('myModal');

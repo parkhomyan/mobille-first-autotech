@@ -116,6 +116,7 @@ body {
 
                 .logo {
                     max-height: 200px;
+                    z-index: 999;
 
                     @media (min-width: 1024px) {
                         text-align: center;
@@ -729,9 +730,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 640px) {
+        max-width: 100%;
 
+     @media (min-width: 768px) {
+        max-width: 100%;
+     }
+
+     @media (min-width: 1024px) {
+         max-width: 300px;
+     }
+
+     @media (min-width: 1320px) {
+         mmax-width: 300px;
+     }
+    }
     .product-packages-items {
         display: flex;
+
+        .button-container {
+            width: 100%;
+            text-align: center;
+        }
 
     }
 
@@ -742,96 +762,144 @@ body {
     .product-card {
         border: 1px solid rgb(172, 172, 172);
         border-radius: 8px;
+        height: 530px;
+        @media (min-width: 640px) {
+            height: 100%;
+            width: 600px;
+         }
 
-        .product-card-title {
-            font-family: 'SFUIDisplay-Bold';
-            font-weight: 700;
-            letter-spacing: 1px;
-            position: relative;
-            overflow: hidden;
+         @media (min-width: 768px) {
+            height: 100%;
+            width: 700px;
+         }
 
+         @media (min-width: 1024px) {
+            height: 530px;
+            width: 100%;
+         }
+
+         @media (min-width: 1320px) {
+            height: 530px;
+            width: 100%;
+         }
+        .list-container {
+            flex: 1 1 auto;
             @media (min-width: 640px) {
-                width: 100%;
-                font-size: 50px;
-                padding: 50px 0;
+               min-width: 300px;
+               justify-content: center;
             }
 
             @media (min-width: 768px) {
-                width: 100%;
-                font-size: 40px;
-                padding: 30px 0;
+                min-width: 300px;
+               justify-content: center;
             }
 
             @media (min-width: 1024px) {
-                width: 98%;
-                font-size: 20px;
-                padding: 10px 0 10px 0;
+                min-width: 300px;
+               justify-content: center;
             }
 
             @media (min-width: 1320px) {
-                width: 98%;
-                font-size: 20px;
-                padding: 15px 0 10px 0;
+                min-width: 300px;
+               justify-content: center;
             }
+        }
 
-            font-weight: normal;
+        .title-container {
+            width: 100%;
             text-align: center;
+            
 
-            span {
-                display: block;
-                margin: 0 .4em;
+            .product-card-title {
+                font-family: 'SFUIDisplay-Bold';
+                font-weight: 700;
+                letter-spacing: 1px;
+                position: relative;
+                overflow: hidden;
 
-                &::before {
-                    content: '';
-                    position: absolute;
+                @media (min-width: 640px) {
                     width: 100%;
-
-                    @media (min-width: 640px) {
-                        border-top: 4px solid $accent;
-                        margin-top: .7em;
-                    }
-
-                    @media (min-width: 768px) {
-                        border-top: 4px solid $accent;
-                        margin-top: .7em;
-                    }
-
-                    @media (min-width: 1024px) {
-                        border-top: 2px solid $accent;
-                        margin-top: .7em;
-                    }
+                    font-size: 50px;
+                    padding: 50px 0;
                 }
 
-                &::after {
-                    content: '';
-                    position: absolute;
+                @media (min-width: 768px) {
                     width: 100%;
+                    font-size: 40px;
+                    padding: 30px 0;
+                }
 
-                    @media (min-width: 640px) {
-                        border-top: 4px solid $accent;
-                        margin-top: .7em;
+                @media (min-width: 1024px) {
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 10px 0 10px 0;
+                }
+
+                @media (min-width: 1320px) {
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 15px 0 10px 0;
+                }
+
+                font-weight: normal;
+                text-align: center;
+
+                span {
+                    display: block;
+                    margin: 0 .4em;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+
+                        @media (min-width: 640px) {
+                            border-top: 4px solid $accent;
+                            margin-top: .7em;
+                        }
+
+                        @media (min-width: 768px) {
+                            border-top: 4px solid $accent;
+                            margin-top: .7em;
+                        }
+
+                        @media (min-width: 1024px) {
+                            border-top: 2px solid $accent;
+                            margin-top: .7em;
+                        }
                     }
 
-                    @media (min-width: 768px) {
-                        border-top: 4px solid $accent;
-                        margin-top: .7em;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+
+                        @media (min-width: 640px) {
+                            border-top: 4px solid $accent;
+                            margin-top: .7em;
+                        }
+
+                        @media (min-width: 768px) {
+                            border-top: 4px solid $accent;
+                            margin-top: .7em;
+                        }
+
+                        @media (min-width: 1024px) {
+                            border-top: 2px solid $accent;
+                            margin-top: .7em;
+                        }
                     }
 
-                    @media (min-width: 1024px) {
-                        border-top: 2px solid $accent;
-                        margin-top: .7em;
+                    &::before {
+                        margin-left: -102%;
+                    }
+
+                    &::after {
+                        margin-left: 2%;
                     }
                 }
 
-                &::before {
-                    margin-left: -102%;
-                }
-
-                &::after {
-                    margin-left: 2%;
-                }
             }
-
         }
 
         display: flex;
