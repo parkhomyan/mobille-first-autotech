@@ -1320,21 +1320,21 @@ body {
 
 @media (min-width: 640px) {
   .list-of-services {
-    border-bottom: 1px solid #1D85D0;
+    border-bottom: 1px solid #808080;
     border-radius: 8px;
   }
 }
 
 @media (min-width: 768px) {
   .list-of-services {
-    border-bottom: 1px solid #1D85D0;
+    border-bottom: 1px solid #808080;
     border-radius: 8px;
   }
 }
 
 @media (min-width: 1024px) {
   .list-of-services {
-    border-bottom: 1px solid #1D85D0;
+    border-bottom: 1px solid #808080;
     border-radius: 8px;
   }
 }
