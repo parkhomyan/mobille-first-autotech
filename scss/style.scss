@@ -742,7 +742,7 @@ body {
      }
 
      @media (min-width: 1320px) {
-         mmax-width: 300px;
+         max-width: 300px;
      }
     }
     .product-packages-items {
@@ -1473,7 +1473,9 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
 }
-
+.active{
+    display: block;
+}
 /* Modal Content/Box */
 .modal-content {
     font-family: 'SFUIDisplay-Regular';

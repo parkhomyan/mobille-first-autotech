@@ -1,0 +1,30 @@
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 648px) {
+  .menu ul li {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu ul li {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu ul li {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .menu ul li {
+    padding: 0 10px 0 10px;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

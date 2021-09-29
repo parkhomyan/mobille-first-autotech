@@ -1,0 +1,21 @@
+.menu{
+    ul{
+        display: flex;
+        li{
+            @media (min-width: 648px) {
+                padding: 0 10px 0 10px;
+            }
+    
+            @media (min-width: 768px) {
+                padding: 0 10px 0 10px;
+            }
+    
+            @media (min-width: 1024px) {
+                padding: 0 10px 0 10px;
+            }
+            @media (min-width: 1320px) {
+                padding: 0 10px 0 10px;
+            }
+        }
+    }
+}
